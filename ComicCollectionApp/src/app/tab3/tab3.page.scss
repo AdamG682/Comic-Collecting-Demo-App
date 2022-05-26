@@ -3,3 +3,35 @@
     font-family: 'MontserratAlternatesBold';
     font-size: 25px;
 }
+
+#searchBar{
+    margin: auto;
+}
+
+.filterButton{
+    margin: auto;
+    margin-top: 15px;
+}
+
+.itemsSearched{
+    margin: auto;
+    margin-top: 15px;
+}
+
+.itemName{
+    font-size: 17px;
+}
+
+p{
+    font-size: 15px;
+    color: grey;
+}
+
+ion-badge{
+    color: black;
+    text-align: center;
+}
+
+#badgePadding{
+    margin-right: 5px;
+}
