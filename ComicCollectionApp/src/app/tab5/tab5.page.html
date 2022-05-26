@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title id="title">
+      Collector's Info
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="centerContent">
+
+<ion-avatar id="avatarPicture">
+  <img src="https://flash.comiccruncher.com/images/characters/210079bb.jpg">
+</ion-avatar>
+
+<ion-text>
+  <h2 id="name">Hal Jordan</h2>
+</ion-text>
+
+<ion-text class="introText">
+  Member Since: May 2022
+  <br>
+  Total Issues in Collection: 14,783
+  <br>
+</ion-text>
+
+<br>
+
+<ion-button color="light" expand="block" class="profileButton">Share Your Profile</ion-button>
+<ion-button color="light" expand="block" class="profileButton" routerLink="/tabs/tab3">View Personal Collection</ion-button>
+<ion-button color="light" expand="block" class="profileButton" routerLink="/tabs/tab4">View Series Wishlist</ion-button>
+<ion-button (click)="showAlert2()" color="danger" expand="block" class="profileButton">Sign Out</ion-button>
+
+</ion-content>

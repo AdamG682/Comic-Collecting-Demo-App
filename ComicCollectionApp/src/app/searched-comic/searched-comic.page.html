@@ -1,0 +1,785 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="centerContent">
+
+<ion-card>
+  <img class="resizeImage" src="https://i0.wp.com/batman-news.com/wp-content/uploads/2012/09/Batman-0.jpg?fit=1500%2C2307&quality=80&strip=info&ssl=1">
+
+  <ion-card-header>
+    <ion-card-title class="titleName">Batman: New 52</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-card-subtitle class="stats">Written By: Scott Snyder</ion-card-subtitle>
+    <ion-card-subtitle class="stats">Art By: Greg Capullo</ion-card-subtitle>
+    <ion-card-subtitle class="stats">Release Date: 2011</ion-card-subtitle>
+    <ion-card-subtitle class="stats">Issue Count: 57</ion-card-subtitle>
+
+    <ion-button expand="block" color="warning">
+      <ion-icon slot="end" src="../assets/icon/star.svg"></ion-icon>
+      Following
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
+<ion-button color="success">
+  <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  <ion-text>In Collection</ion-text>
+</ion-button>
+<ion-button color="danger">
+  <ion-icon slot="icon-only" src="../assets/icon/close.svg">Missing</ion-icon>
+  <ion-text>Missing</ion-text>
+</ion-button>
+
+
+<br>
+<br>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #0 Bright New Yesterday</h2>
+    <p>Release Date: November 2011</p>
+  </ion-label>
+  <ion-button (click)="addAlert()" color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button (click)="removeAlert()" color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #1 Knife Trick</h2>
+    <p>Release Date: November 2011</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #2 Trust Fall</h2>
+    <p>Release Date: December 2011</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #3 The Thirteenth Hour</h2>
+    <p>Release Date: January 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #4 Face the Court Part One</h2>
+    <p>Release Date: February 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #5 Face the Court Part Two</h2>
+    <p>Release Date: March 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #6 Beneath the Glass</h2>
+    <p>Release Date: April 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #7 The Talons Strike!</h2>
+    <p>Release Date: May 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #8 Attack on Wayne Manor</h2>
+    <p>Release Date: June 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #9 The Night of the Owls</h2>
+    <p>Release Date: July 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #10 Assault on the Court</h2>
+    <p>Release Date: August 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #11 My Brother's Keeper</h2>
+    <p>Release Date: September 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #12 Ghost in the Machine</h2>
+    <p>Release Date: October 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #13 Knock, Knock</h2>
+    <p>Release Date: December 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #14 Funny Bones</h2>
+    <p>Release Date: January 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #15 But Here's the Kicker</h2>
+    <p>Release Date: February 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #16 Castle of Cards</h2>
+    <p>Release Date: March 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #17 The Punchline</h2>
+    <p>Release Date: April 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #18 Resolve</h2>
+    <p>Release Date: May 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #19 Nowhere Man Part One</h2>
+    <p>Release Date: June 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #20 Nowhere Man Part Two</h2>
+    <p>Release Date: July 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #21 Zero Year: Secret City Part One</h2>
+    <p>Release Date: August 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #22 Zero Year: Secret City Part Two</h2>
+    <p>Release Date: September 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #23 Zero Year: Secret City Part Three</h2>
+    <p>Release Date: October 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #23.1 Time to Monkey Shine</h2>
+    <p>Release Date: November 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #23.2 Solitaire</h2>
+    <p>Release Date: November 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #23.3 Bullies</h2>
+    <p>Release Date: November 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #23.4 Dark Destiny</h2>
+    <p>Release Date: November 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #24 Zero Year: Dark City Part One</h2>
+    <p>Release Date: December 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #25 Zero Year: Dark City Part Two</h2>
+    <p>Release Date: January 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #26 Zero Year: Dark City Part Three</h2>
+    <p>Release Date: February 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #27 Zero Year: Dark City Part Four</h2>
+    <p>Release Date: March 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #28 Gotham Eternal</h2>
+    <p>Release Date: April 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #29 Zero Year: Dark City</h2>
+    <p>Release Date: May 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #30 Zero Year: Savage City Part One</h2>
+    <p>Release Date: June 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #31 Zero Year: Savage City Part Two</h2>
+    <p>Release Date: July 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #32 Zero Year: Savage City Part Three</h2>
+    <p>Release Date: August 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #33 Zero Year: Savage City Part Four</h2>
+    <p>Release Date: September 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #34 The Meek</h2>
+    <p>Release Date: October 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #35 Endgame Part One</h2>
+    <p>Release Date: December 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #36 Endgame Part Two</h2>
+    <p>Release Date: January 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #37 Endgame Part Three</h2>
+    <p>Release Date: February 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #38 Endgame Part Four</h2>
+    <p>Release Date: March 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #39 Endgame Part Five</h2>
+    <p>Release Date: April 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #40 Endgame Part Six</h2>
+    <p>Release Date: June 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #41 Superheavy Part One</h2>
+    <p>Release Date: August 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #42 Superheavy Part Two</h2>
+    <p>Release Date: September 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #43 Superheavy Part Three</h2>
+    <p>Release Date: October 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #44 A Simple Case</h2>
+    <p>Release Date: November 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #45 Superheavy Part Five</h2>
+    <p>Release Date: December 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #46 Superheavy Part Six</h2>
+    <p>Release Date: January 2016</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #47 Superheavy Part Seven</h2>
+    <p>Release Date: February 2016</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #48 Superheavy Part Eight</h2>
+    <p>Release Date: March 2016</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #49 Superheavy Part Nine</h2>
+    <p>Release Date: April 2016</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #50 Superheavy Part Ten</h2>
+    <p>Release Date: May 2016</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #51 Gotham Is</h2>
+    <p>Release Date: June 2016</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #52 The List</h2>
+    <p>Release Date: July 2016</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+</ion-content>
