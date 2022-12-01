@@ -1,134 +1,121 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title id="title">
-      Your Collection
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-searchbar color="light" id="searchBar"></ion-searchbar>
-  <ion-button color="light" expand="full" class="filterButton">Apply Filters</ion-button>
+<ion-content [fullscreen]="true" id="centerContent">
 
-  <br>
-
-  <ion-item color="light">
-    <ion-label>
-      A
-    </ion-label>
+  <ion-item>
+    <ion-searchbar color="light" id="searchBar"></ion-searchbar>
+    <ion-button color="light">
+      <ion-icon slot="icon-only" src="../assets/icon/filter.svg"></ion-icon>
+    </ion-button>
   </ion-item>
 
-        <ion-item class="itemsSearched">
-          <ion-thumbnail slot="start">
-            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/2275022-www.jpg">
-          </ion-thumbnail>
-          <ion-label>
-            <h2 class="itemName">Avenger Vs. X-Men</h2>
-            <p>Author: Brian Michael Bendis</p>
-          </ion-label>
-          <ion-button color="light" routerLink="/searched-comic">
+  <ion-button expand="block" color="medium" routerLink="/tabs/tab2">
+    <ion-icon slot="end" src="../assets/icon/add-circle.svg"></ion-icon>
+    Add to Collection
+  </ion-button>
+
+  <h1 class="typeName">A</h1>
+  <hr>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img class="imgResize2" src="https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/2275022-www.jpg">
+        <ion-button expand="block" color="light" size="small" routerLink="/collectionitem1">
             <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-          </ion-button>
-        </ion-item>
+        </ion-button>
+        <ion-subtitle class="itemName">A Vs. X</ion-subtitle>
+        <br>
+        <ion-subtitle class="issueDate">Marvel Comics</ion-subtitle>
+      </ion-col>
+  
+      <ion-col>
+        <img class="imgResize2" src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/2083416-01.jpg">
+        <ion-button expand="block" color="light" size="small" routerLink="/collectionitem3"> 
+          <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
+        </ion-button>
+        <ion-subtitle class="itemName">Aquaman: New 52</ion-subtitle>
+        <br>
+        <ion-subtitle class="issueDate">DC Comics</ion-subtitle>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-        <ion-item class="itemsSearched">
-          <ion-thumbnail slot="start">
-            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/5379264-01.jpg">
-          </ion-thumbnail>
-          <ion-label>
-            <h2 class="itemName">All Star Batman: Rebirth</h2>
-            <p>Author: Scott Snyder</p>
-          </ion-label>
-          <ion-button color="light" routerLink="/searched-comic">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img class="imgResize2" src="https://comicvine.gamespot.com/a/uploads/scale_small/3/31666/2748468-cover.jpg">
+        <ion-button expand="block" color="light" size="small">
             <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-          </ion-button>
-        </ion-item>
+        </ion-button>
+        <ion-subtitle class="itemName">Avengers</ion-subtitle>
+        <br>
+        <ion-subtitle class="issueDate">Marvel Comics</ion-subtitle>
+      </ion-col>
+  
+      <ion-col>
+        <img class="imgResize2" src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/5511323-01.jpg">
+        <ion-button expand="block" color="light" size="small"> 
+          <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
+        </ion-button>
+        <ion-subtitle class="itemName">Avengers</ion-subtitle>
+        <br>
+        <ion-subtitle class="issueDate">Marvel Comics</ion-subtitle>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-        <ion-item class="itemsSearched">
-          <ion-thumbnail slot="start">
-            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/2083416-01.jpg">
-          </ion-thumbnail>
-          <ion-label>
-            <h2 class="itemName">Aquaman: New 52</h2>
-            <p>Author: Geoff Johns</p>
-          </ion-label>
-          <ion-button color="light" routerLink="/searched-comic">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img class="imgResize2" src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/2170075-01a.jpg">
+        <ion-button expand="block" color="light" size="small">
             <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-          </ion-button>
-        </ion-item>
+        </ion-button>
+        <ion-subtitle class="itemName">Avengers Invaders</ion-subtitle>
+        <br>
+        <ion-subtitle class="issueDate">Marvel Comics</ion-subtitle>
+      </ion-col>
+  
+      <ion-col>
+        <img class="imgResize2" src="https://comicvine.gamespot.com/a/uploads/scale_small/5/57023/2122929-prv10715_cov.jpg">
+        <ion-button expand="block" color="light" size="small"> 
+          <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
+        </ion-button>
+        <ion-subtitle class="itemName">Avengers X-Sanction</ion-subtitle>
+        <br>
+        <ion-subtitle class="issueDate">Marvel Comics</ion-subtitle>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-        <ion-item class="itemsSearched">
-          <ion-thumbnail slot="start">
-            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/3/31666/2748468-cover.jpg">
-          </ion-thumbnail>
-          <ion-label>
-            <h2 class="itemName">Avengers</h2>
-            <p>Author: Jonathan Hickman</p>
-          </ion-label>
-          <ion-button color="light" routerLink="/searched-comic">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img class="imgResize2" src="https://i.annihil.us/u/prod/marvel/i/mg/2/d0/4f9accbf89a3e/portrait_uncanny.jpg">
+        <ion-button expand="block" color="light" size="small">
             <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-          </ion-button>
-        </ion-item>
+        </ion-button>
+        <ion-subtitle class="itemName">Avengers vs. X-Men: VS</ion-subtitle>
+        <br>
+        <ion-subtitle class="issueDate">Marvel Comics</ion-subtitle>
+      </ion-col>
+  
+      <ion-col>
 
-        <ion-item class="itemsSearched">
-          <ion-thumbnail slot="start">
-            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/5511323-01.jpg">
-          </ion-thumbnail>
-          <ion-label>
-            <h2 class="itemName">Avengers</h2>
-            <p>Author: Mark Waid</p>
-          </ion-label>
-          <ion-button color="light" routerLink="/searched-comic">
-            <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-          </ion-button>
-        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-        <ion-item class="itemsSearched">
-          <ion-thumbnail slot="start">
-            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/2170075-01a.jpg">
-          </ion-thumbnail>
-          <ion-label>
-            <h2 class="itemName">Avengers Invaders</h2>
-            <p>Author: Alex Ross</p>
-          </ion-label>
-          <ion-button color="light" routerLink="/searched-comic">
-            <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-          </ion-button>
-        </ion-item>
+        
+<h1 class="typeName">B</h1>
+<hr>
 
-        <ion-item class="itemsSearched">
-          <ion-thumbnail slot="start">
-            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/5/57023/2122929-prv10715_cov.jpg">
-          </ion-thumbnail>
-          <ion-label>
-            <h2 class="itemName">Avengers X-Sanction</h2>
-            <p>Author: Jeph Loeb</p>
-          </ion-label>
-          <ion-button color="light" routerLink="/searched-comic">
-            <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-          </ion-button>
-        </ion-item>
-
-        <ion-item class="itemsSearched">
-          <ion-thumbnail slot="start">
-            <img src="https://i.annihil.us/u/prod/marvel/i/mg/2/d0/4f9accbf89a3e/portrait_uncanny.jpg">
-          </ion-thumbnail>
-          <ion-label>
-            <h2 class="itemName">Avengers vs. X-Men: VS</h2>
-            <p>Author: Various Writers</p>
-          </ion-label>
-          <ion-button color="light" routerLink="/searched-comic">
-            <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-          </ion-button>
-        </ion-item>
-
-<br>
-
-  <ion-item color="light">
-    <ion-label>
-      B
-    </ion-label>
-  </ion-item>
         <ion-item class="itemsSearched">
           <ion-thumbnail slot="start">
             <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/2033095-01a.jpg">
@@ -339,11 +326,9 @@
 
 <br>
 
-  <ion-item color="light">
-    <ion-label>
-      C
-    </ion-label>
-  </ion-item>
+<h1 class="typeName">C</h1>
+<hr>
+
         <ion-item class="itemsSearched">
           <ion-thumbnail slot="start">
             <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/5500587-01.jpg">
@@ -450,11 +435,9 @@
 
 <br>      
 
-  <ion-item color="light">
-    <ion-label>
-      D
-    </ion-label>
-  </ion-item>
+<h1 class="typeName">D</h1>
+<hr>
+
         <ion-item class="itemsSearched">
           <ion-thumbnail slot="start">
             <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/4934520-01.jpg">
@@ -587,154 +570,36 @@
 
 <br>
 
+<h1 class="typeName">E</h1>
+<hr>
 
+        <ion-item class="itemsSearched">
+          <ion-thumbnail slot="start">
+            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/66303/2322853-__kgrhqfhjf_e919o_pw5bpokdewetg__60_57_1.jpeg">
+          </ion-thumbnail>
+          <ion-label>
+            <h2 class="itemName">Earth 2: New 52</h2>
+            <p>Author: Daniel H. Wilson</p>
+          </ion-label>
+          <ion-button color="light" routerLink="/searched-comic">
+            <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
+          </ion-button>
+        </ion-item>
 
-  <ion-item color="light">
-    <ion-label>
-      E
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      F
-    </ion-label>
-  </ion-item>
+        <ion-item class="itemsSearched">
+          <ion-thumbnail slot="start">
+            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/5923483-01.jpg">
+          </ion-thumbnail>
+          <ion-label>
+            <h2 class="itemName">Edge of the Venomverse</h2>
+            <p>Author: Ryan Key</p>
+          </ion-label>
+          <ion-button color="light" routerLink="/searched-comic">
+            <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
+          </ion-button>
+        </ion-item>
 
-  <ion-item color="light">
-    <ion-label>
-      G
-    </ion-label>
-  </ion-item>
-
-
-  <ion-item class="itemsSearched">
-    <ion-label>
-      <h2 class="itemName">Green Lantern New 52</h2>
-    </ion-label>
-    <ion-button color="light" routerLink="/searched-comic">
-      <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-    </ion-button>
-  </ion-item>
-
-  <ion-item class="itemsSearched">
-    <ion-label>
-      <h2 class="itemName">Green Lantern New 52</h2>
-    </ion-label>
-    <ion-button color="light" routerLink="/searched-comic">
-      <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-    </ion-button>
-  </ion-item>
-
-
-
-
-  <ion-item color="light">
-    <ion-label>
-      H
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      I
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      J
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      K
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      L
-    </ion-label>
-  </ion-item>
-
-  <ion-item color="light">
-    <ion-label>
-     M
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      N
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      O
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      P
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      Q
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      R
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      S
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      T
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      U
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      V
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      W
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      X
-    </ion-label>
-  </ion-item>
-
-    <ion-item color="light">
-    <ion-label>
-      Y
-    </ion-label>
-  </ion-item>
-  <ion-item color="light">
-    <ion-label>
-      Z
-    </ion-label>
-  </ion-item>
-  
-
-  <ion-item class="itemsSearched">
-    <ion-label>
-      <h2 class="itemName">Green Lantern New 52</h2>
-    </ion-label>
-    <ion-button color="light" routerLink="/searched-comic">
-      <ion-icon slot="icon-only" src="../assets/icon/chevron-forward.svg"></ion-icon>
-    </ion-button>
-  </ion-item>
+<br>
 
   
 </ion-content>

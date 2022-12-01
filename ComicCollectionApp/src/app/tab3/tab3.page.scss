@@ -1,16 +1,16 @@
+
+#centerContent{
+    text-align: center;
+}
+
 #title{
     text-align:center;
-    font-family: 'MontserratAlternatesBold';
+    font-family: 'GothamThin';
     font-size: 25px;
 }
 
 #searchBar{
     margin: auto;
-}
-
-.filterButton{
-    margin: auto;
-    margin-top: 15px;
 }
 
 .itemsSearched{
@@ -34,4 +34,42 @@ ion-badge{
 
 #badgePadding{
     margin-right: 5px;
+}
+
+#textFont{
+    font-family: 'GothamThin';
+}
+
+.typeName{
+    font-family: 'GothamMedium';
+    font-size: 22px;
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+}
+
+hr{
+    background-color: white;
+    width: 350px;
+    height: 1px;
+}
+
+.imgResize2{
+    width: auto;
+    height: 250px;
+    border: 2px solid white;
+}
+
+.itemName{
+    font-size: 15px;
+    color: white;
+    font-family: 'GothamMedium';
+    font-style: italic;
+}
+
+.issueDate{
+    font-size: 15px;
+    color: rgb(215, 214, 214);
+    font-family: 'GothamThin';
+    font-style: italic;
 }

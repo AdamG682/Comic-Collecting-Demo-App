@@ -31,12 +31,12 @@
     padding: 25px;
 }
 
-@font-face {   
-    font-family: 'MontserratAlternates';    //This is what we are going to call
-    src: url('../assets/font/MontserratAlternates-Regular.ttf');
-  }
+@font-face {
+  font-family: 'GothamThin';
+  src: url('../assets/font/Gotham-Thin.otf');
+}
 
-@font-face {   
-    font-family: 'MontserratAlternatesBold';    //This is what we are going to call
-    src: url('../assets/font/MontserratAlternates-Bold.ttf');
-  }
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('../assets/font/GothamMedium.ttf');
+}

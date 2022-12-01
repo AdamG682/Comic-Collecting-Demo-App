@@ -1,5 +1,85 @@
+#centerContent{
+    text-align: center;
+}
+
 #title{
     text-align:center;
-    font-family: 'MontserratAlternatesBold';    
+    font-family: 'GothamMedium';
+    font-size: 45px;
+    line-height: 0.2em;
+    padding-bottom: 60px;
+}
+
+#todayTitle{
+    text-align:center;
+    font-family: 'GothamMedium';
+    font-size: 30px;
+}
+
+#subTitle{
+    text-align: center;
+    font-family: 'GothamThin';
     font-size: 25px;
+}
+
+#cardHeader{
+    text-align:center;
+    font-family: 'GothamMedium';
+    font-size: 30px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+#cardSubHeader{
+    text-align:center;
+    font-family: 'GothamThin';
+    font-size: 20px;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+ion-slide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+#companyCard{
+    background-color: #303030;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+.imgResize{
+    width: 500px;
+    height: 150px;
+}
+
+#todayImg{
+    width: 300px;
+    height: auto;
+}
+
+hr{
+    background-color: white;
+    width: 300px;
+    height: 1px;
+}
+
+#description{
+    font-size: 20px;
+    font-family: 'GothamThin';
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#todayStatsHeader{
+    font-size: 30px;
+    font-family: 'GothamMedium';
+    margin-left: 40px;
+    margin-right: 40px;
 }

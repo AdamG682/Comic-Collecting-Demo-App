@@ -1,0 +1,228 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab3"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="centerContent">
+
+<ion-card>
+
+  <img class="resizeImage" src="https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/2275022-www.jpg">
+  <br>
+  <ion-badge color="success">Collection Completed</ion-badge>
+  
+  <ion-card-header>
+    <ion-card-title class="titleName">A Vs. X</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-card-subtitle class="stats">Written By: Brian Michael Bendis</ion-card-subtitle>
+    <ion-card-subtitle class="stats">Art By: Jim Cheung</ion-card-subtitle>
+    <ion-card-subtitle class="stats">Release Date: 2012</ion-card-subtitle>
+    <ion-card-subtitle class="stats">Issue Count: 13</ion-card-subtitle>
+
+    <ion-button (click)="showAlert()" expand="block" color="medium">
+      <ion-icon slot="end" src="../assets/icon/add-circle.svg"></ion-icon>
+      Favorite
+    </ion-button>
+
+  </ion-card-content>
+</ion-card>
+
+<ion-item>
+  <ion-label>Type</ion-label>
+  <ion-select value="type" interface = "action-sheet">
+    <ion-select-option value="back">Back Issues</ion-select-option>
+    <ion-select-option value="graphic">Graphic Novels</ion-select-option>
+  </ion-select>
+</ion-item>
+
+<br>
+
+<ion-button color="success">
+  <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  <ion-text>In Collection</ion-text>
+</ion-button>
+<ion-button color="danger">
+  <ion-icon slot="icon-only" src="../assets/icon/close.svg">Missing</ion-icon>
+  <ion-text>Missing</ion-text>
+</ion-button>
+
+
+<br>
+<br>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #0 Prologue</h2>
+    <p>Release Date: May 2012</p>
+  </ion-label>
+  <ion-button (click)="addAlert()" color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button (click)="removeAlert()" color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #1 Round 1</h2>
+    <p>Release Date: June 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #2 Round 2</h2>
+    <p>Release Date: June 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #3 Round 3</h2>
+    <p>Release Date: July 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #4 Round 4</h2>
+    <p>Release Date: July 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #5 Round 5</h2>
+    <p>Release Date: August 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #6 Round 6</h2>
+    <p>Release Date: August 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #7 Round 7</h2>
+    <p>Release Date: September 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #8 Round 8</h2>
+    <p>Release Date: September 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #9 Round 9</h2>
+    <p>Release Date: October 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #10 Round 10</h2>
+    <p>Release Date: October 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #11 Round 11</h2>
+    <p>Release Date: November 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #12 Round 12</h2>
+    <p>Release Date: December 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+</ion-content>
+

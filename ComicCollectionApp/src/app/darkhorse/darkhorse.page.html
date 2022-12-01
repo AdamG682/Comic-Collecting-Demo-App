@@ -1,0 +1,126 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="centerContent">
+
+<ion-card>
+  
+  <ion-card-header>
+    <img class= "imgResize" src="../assets/images/DarkHorseLogo.jpg">
+    <br>
+    <br>
+    <ion-card-title class="titleName">Dark Horse Comics</ion-card-title>
+    <ion-card-subtitle class="stats">5 New Comics This Week</ion-card-subtitle>
+    <ion-card-subtitle class="stats">1 New Graphic Novel This Week</ion-card-subtitle>
+    <br>
+    <ion-button (click)="showAlert()" expand="block" color="light">
+      <ion-icon slot="end" src="../assets/icon/notifications.svg"></ion-icon>
+      Notifications Disabled
+    </ion-button>
+  </ion-card-header>
+
+</ion-card>
+
+<hr>
+
+<h1 class="typeName">New Comic Books</h1>
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-1542942.jpg?1657151599">
+      <ion-button expand="block" color="light" size="small">
+          <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Stranger Things Summer Special Issue #1</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-9236005.jpg?1657151651">
+      <ion-button expand="block" color="light" size="small"> 
+        <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">The Ward Issue #2</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-3344077.jpg?1650641198">
+      <ion-button expand="block" color="light" size="small"> 
+          <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Cyberpunk 2077: Blackout Issue #2</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-3851923.jpg?1657151488">
+      <ion-button expand="block" color="light" size="small"> 
+        <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Mind MGMT: Bootleg Issue #1</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-7740665.jpg?1657202810">
+      <ion-button expand="block" color="light" size="small"> 
+          <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Avatar: Adapt or Die Issue #3</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+
+    <ion-col>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<hr>
+
+<h1 class="typeName">New Graphic Novels</h1>
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-8843744.jpg?1657151692">
+      <ion-button expand="block" color="light" size="small"> 
+          <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">The Vertical Sea</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+
+    <ion-col>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<hr>
+<br>
+
+</ion-content>

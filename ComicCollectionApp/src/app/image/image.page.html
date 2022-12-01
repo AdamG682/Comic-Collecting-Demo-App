@@ -1,0 +1,181 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="centerContent">
+
+<ion-card>
+  
+  <ion-card-header>
+    <img class= "imgResize" src="../assets/images/ImageComicsLogo.png">
+    <br>
+    <br>
+    <ion-card-title class="titleName">Image Comics</ion-card-title>
+    <ion-card-subtitle class="stats">10 New Comics This Week</ion-card-subtitle>
+    <ion-card-subtitle class="stats">1 New Graphic Novel This Week</ion-card-subtitle>
+    <br>
+    <ion-button (click)="showAlert()" expand="block" color="light">
+      <ion-icon slot="end" src="../assets/icon/notifications.svg"></ion-icon>
+      Notifications Disabled
+    </ion-button>
+  </ion-card-header>
+
+</ion-card>
+
+<hr>
+
+<h1 class="typeName">New Comic Books</h1>
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-4194591.jpg?1654788492">
+      <ion-button expand="block" color="light" size="small">
+          <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Saga Issue #60</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-8899749.jpg?1649284174">
+      <ion-button expand="block" color="light" size="small"> 
+        <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Spawn Issue #331</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-3356307.jpg?1654619529">
+      <ion-button expand="block" color="light" size="small"> 
+          <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Twig Issue #3</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-1567317.jpg?1657135712">
+      <ion-button expand="block" color="light" size="small"> 
+        <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Little Monsters Issue #5</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-7726550.jpg?1657151483">
+      <ion-button expand="block" color="light" size="small"> 
+          <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">The Closet Issue #2</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-9457271.jpg?1650730835">
+      <ion-button expand="block" color="light" size="small"> 
+        <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Time Before Time Issue #14</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-9920060.jpg?1655646040">
+      <ion-button expand="block" color="light" size="small"> 
+          <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Killadelphia Issue #23</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-1989356.jpg?1652457045">
+      <ion-button expand="block" color="light" size="small"> 
+        <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>     
+      <ion-subtitle class="itemName">Starhenge, Book One: The Dragon & The Boar Issue #1</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-9499983.jpg?1650781010">
+      <ion-button expand="block" color="light" size="small"> 
+          <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">That Texas Blood Issue #15</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-1573928.jpg?1653166213">
+      <ion-button expand="block" color="light" size="small"> 
+        <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">Prodigy: The Icarus Society Issue #1</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+<hr>
+
+<h1 class="typeName">New Graphic Novels</h1>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img class="imgResize2" src="https://s3.amazonaws.com/comicgeeks/comics/covers/medium-7442986.jpg?1648956899">
+      <ion-button expand="block" color="light" size="small">
+          <ion-icon slot="icon-only" src="../assets/icon/heart.svg"></ion-icon>
+      </ion-button>
+      <ion-subtitle class="itemName">The Creep</ion-subtitle>
+      <br>
+      <ion-subtitle class="issueDate">July 2022</ion-subtitle>
+    </ion-col>
+
+    <ion-col>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<hr>
+<br>
+
+</ion-content>
+

@@ -1,0 +1,63 @@
+
+#centerContent{
+    text-align: center;
+}
+
+.titleName{
+    font-family: 'GothamMedium';
+    font-size: 25px;
+    color: white;
+    text-align: left !important;
+}
+
+.stats{
+    font-size: 15px;
+    color: grey;
+    font-family: 'GothamThin';
+    font-style: italic;
+    text-align: left !important;
+}
+
+.typeName{
+    font-family: 'GothamMedium';
+    font-size: 22px;
+    color: white;
+}
+
+#mainHead{
+    font-family: 'GothamMedium';
+    font-size: 35px;
+    color: white;
+}
+
+.itemName{
+    font-size: 15px;
+    color: white;
+    font-family: 'GothamMedium';
+    font-style: italic;
+}
+
+.issueDate{
+    font-size: 15px;
+    color: rgb(215, 214, 214);
+    font-family: 'GothamThin';
+    font-style: italic;
+}
+
+.imgResize{
+    width: 500px;
+    height: 200px;
+}
+
+.imgResize2{
+    width: auto;
+    height: 250px;
+    border: 2px solid white;
+}
+
+hr{
+    background-color: white;
+    width: 350px;
+    height: 1px;
+}
+

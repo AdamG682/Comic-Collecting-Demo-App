@@ -1,11 +1,104 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title id="title">
-      The Comic Den
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
+
+  <h1 id="subTitle">Welcome To</h1>
+  <h1 id="title">The Comic Den</h1>
+
+  <hr>
+
+  <div>
+    <h1 id="cardHeader">New This Week</h1>
+    <h2 id="cardSubHeader">Select any of the following publishing companies to see what released this week.</h2>
+
+    <ion-slides pager="true">
+
+      <ion-slide>
+        <ion-card id="companyCard">
+          <ion-card-header>
+            <img routerLink="/marvel-page" class="imgResize" src="../assets/images/MarvelComicsLogo.jpeg">
+          </ion-card-header>
+        </ion-card>
+        <br>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card id="companyCard">
+          <ion-card-header>
+            <img routerLink="/dccomics" class="imgResize" src="../assets/images/DCComicsLogo.png">
+          </ion-card-header>
+        </ion-card>
+        <br>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card id="companyCard">
+          <ion-card-header>
+            <img routerLink="/image" class="imgResize" src="../assets/images/ImageComicsLogo.png">
+          </ion-card-header>
+        </ion-card>
+        <br>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card id="companyCard">
+          <ion-card-header>
+            <img routerLink="/darkhorse" class="imgResize" src="../assets/images/DarkHorseLogo.jpg">
+          </ion-card-header>
+        </ion-card>
+        <br>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <hr>
+
+  <div>
+    <h1 id="cardHeader">Today's Feature</h1>
+
+    <ion-card id="companyCard">
+      <ion-card-header>
+        <img id="todayImg" src="https://images-na.ssl-images-amazon.com/images/I/A1Gb8vuZiCL.jpg">
+      </ion-card-header>
+    </ion-card>
+
+    <ion-slides pager="true">
+
+      <ion-slide>
+
+        <ion-header>
+          <h1 id="todayStatsHeader">Batman Hush</h1>
+        </ion-header>
+
+        <ion-subtitle id="description">Written By: Jeph Loeb</ion-subtitle>
+        <ion-subtitle id="description">Art By: Jim Lee</ion-subtitle>
+        <ion-subtitle id="description">Publishing Company: DC Comics</ion-subtitle>
+        <ion-subtitle id="description">Release Date: 2002</ion-subtitle>
+        <br>
+        <ion-button expand="block" color="success">
+          <ion-icon slot="end" src="../assets/icon/checkmark.svg"></ion-icon>
+          In Collection
+        </ion-button>
+        <br>
+      </ion-slide>
+
+      <ion-slide>
+        <p id="description">The story depicts a mysterious stalker called Hush who seems intent on sabotaging Batman from afar, and it
+          includes many guest appearances by Batman's villains, as well as various members of the Batman Family and
+          Batman's close ally Superman. It also explores the romantic potential between Batman and Catwoman.</p>
+        <br>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <hr>
+  <br>
 
 </ion-content>

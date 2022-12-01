@@ -1,0 +1,773 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab3"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="centerContent">
+
+<ion-card>
+
+  <img class="resizeImage" src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/2083416-01.jpg">
+  <br>
+  <ion-badge color="warning">Collection In Progress</ion-badge>
+  
+  <ion-card-header>
+    <ion-card-title class="titleName">Aquaman: New 52</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-card-subtitle class="stats">Written By: Geoff Johns</ion-card-subtitle>
+    <ion-card-subtitle class="stats">Art By: Ivan Reis</ion-card-subtitle>
+    <ion-card-subtitle class="stats">Release Date: 2011</ion-card-subtitle>
+    <ion-card-subtitle class="stats">Issue Count: 55</ion-card-subtitle>
+
+    <ion-button expand="block" color="primary">
+      <ion-icon slot="end" src="../assets/icon/star.svg"></ion-icon>
+      Favorited
+    </ion-button>
+
+  </ion-card-content>
+</ion-card>
+
+<ion-item>
+  <ion-label>Type</ion-label>
+  <ion-select value="type" interface = "action-sheet">
+    <ion-select-option value="back">Back Issues</ion-select-option>
+    <ion-select-option value="graphic">Graphic Novels</ion-select-option>
+  </ion-select>
+</ion-item>
+
+<br>
+
+<ion-button color="success">
+  <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  <ion-text>In Collection</ion-text>
+</ion-button>
+<ion-button color="danger">
+  <ion-icon slot="icon-only" src="../assets/icon/close.svg">Missing</ion-icon>
+  <ion-text>Missing</ion-text>
+</ion-button>
+
+
+<br>
+<br>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #0 Underwater</h2>
+    <p>Release Date: November 2012</p>
+  </ion-label>
+  <ion-button (click)="addAlert()" color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button (click)="removeAlert()" color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #1 The Trench Part One</h2>
+    <p>Release Date: November 2011</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #2 The Trench Part Two</h2>
+    <p>Release Date: December 2011</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #3 The Trench Part Three</h2>
+    <p>Release Date: January 2012</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #4 The Trench Conclusion</h2>
+    <p>Release Date: February 2012</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #5 Lost</h2>
+    <p>Release Date: March 2012</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #6 Deserted!</h2>
+    <p>Release Date: April 2012</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #7 The Others Chapter One</h2>
+    <p>Release Date: May 2012</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #8 The Others Chapter Two</h2>
+    <p>Release Date: June 2012</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #9 The Others Chapter Three</h2>
+    <p>Release Date: July 2012</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #10 The Others Chapter Four</h2>
+    <p>Release Date: August 2012</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #11 The Others Chapter Five</h2>
+    <p>Release Date: September 2012</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #12 The Others Chapter Six</h2>
+    <p>Release Date: October 2012</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #13 The Others Conclusion</h2>
+    <p>Release Date: December 2012</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #14 Throne of Atlantis Prologue</h2>
+    <p>Release Date: January 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #15 Throne of Atlantis Chapter Two</h2>
+    <p>Release Date: February 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #16 Throne of Atlantis Chapter Four</h2>
+    <p>Release Date: March 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #17 Throne of Atlantis Epilogue</h2>
+    <p>Release Date: April 2013</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #18 Death of a King Chapter One</h2>
+    <p>Release Date: May 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #19 Death of a King Chapter Two</h2>
+    <p>Release Date: June 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #20 Skinwalker</h2>
+    <p>Release Date: July 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #21 Death of a King Chapter Three</h2>
+    <p>Release Date: August 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #22 Death of a King Chapter Four</h2>
+    <p>Release Date: September 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #23 Death of a King Chapter Five</h2>
+    <p>Release Date: October 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #23.1 Sea Change</h2>
+    <p>Release Date: November 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #23.2 New Fish</h2>
+    <p>Release Date: November 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #24 Death of a King Chapter Six</h2>
+    <p>Release Date: December 2013</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #25 Death of a King Chapter Seven</h2>
+    <p>Release Date: January 2014</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #26 Pressure</h2>
+    <p>Release Date: February 2014</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #27 Life and Death</h2>
+    <p>Release Date: March 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #28 Triton</h2>
+    <p>Release Date: April 2014</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #29 Olympian</h2>
+    <p>Release Date: May 2014</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #30 Fallen</h2>
+    <p>Release Date: June 2014</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #31 In the Muck</h2>
+    <p>Release Date: July 2014</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #32 It Lives</h2>
+    <p>Release Date: August 2014</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #33 Meet Your Maker</h2>
+    <p>Release Date: September 2014</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #34 Land and Sea</h2>
+    <p>Release Date: October 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #35 Maelstrom Part One</h2>
+    <p>Release Date: December 2014</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #36 Maelstrom Part Two</h2>
+    <p>Release Date: January 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #37 Maelstrom Part Three</h2>
+    <p>Release Date: February 2015</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #38 Maelstrom Part Four</h2>
+    <p>Release Date: March 2015</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #39 Maelstrom Part Five</h2>
+    <p>Release Date: April 2015</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #40 Maelstrom Part Six</h2>
+    <p>Release Date: May 2015</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #41 Terra Incognita</h2>
+    <p>Release Date: August 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #42 The Other Atlantis</h2>
+    <p>Release Date: September 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #43 Gospel of Destruction</h2>
+    <p>Release Date: October 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #44 Siren's Call</h2>
+    <p>Release Date: November 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #45 Alien Discovery</h2>
+    <p>Release Date: December 2015</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #46 Amazon in the Amazon</h2>
+    <p>Release Date: January 2016</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #47 Leagues Below, A League Above</h2>
+    <p>Release Date: February 2016</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #48 Return Of The King</h2>
+    <p>Release Date: March 2016</p>
+  </ion-label>
+  <ion-button color="success">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #49 Rising To The Surface</h2>
+    <p>Release Date: April 2016</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #50 Dead Water</h2>
+    <p>Release Date: May 2016</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #51 Scavenger Hunt</h2>
+    <p>Release Date: June 2016</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+<ion-item class="itemsSearched">
+  <ion-label>
+    <h2 >Issue #52 Out of Darkness</h2>
+    <p>Release Date: July 2016</p>
+  </ion-label>
+  <ion-button color="light">
+    <ion-icon slot="icon-only" src="../assets/icon/checkmark.svg"></ion-icon>
+  </ion-button>
+  <ion-button color="danger">
+    <ion-icon slot="icon-only" src="../assets/icon/close.svg"></ion-icon>
+  </ion-button>
+</ion-item>
+
+</ion-content>

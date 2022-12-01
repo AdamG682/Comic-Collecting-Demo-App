@@ -21,6 +21,30 @@ const routes: Routes = [
   {
     path: 'searched-comic-page2',
     loadChildren: () => import('./searched-comic-page2/searched-comic-page2.module').then( m => m.SearchedComicPage2PageModule)
+  },
+  {
+    path: 'collectionitem1',
+    loadChildren: () => import('./collectionitem1/collectionitem1.module').then( m => m.Collectionitem1PageModule)
+  },
+  {
+    path: 'collectionitem3',
+    loadChildren: () => import('./collectionitem3/collectionitem3.module').then( m => m.Collectionitem3PageModule)
+  },
+  {
+    path: 'marvel-page',
+    loadChildren: () => import('./marvel-page/marvel-page.module').then( m => m.MarvelPagePageModule)
+  },
+  {
+    path: 'dccomics',
+    loadChildren: () => import('./dccomics/dccomics.module').then( m => m.DccomicsPageModule)
+  },
+  {
+    path: 'darkhorse',
+    loadChildren: () => import('./darkhorse/darkhorse.module').then( m => m.DarkhorsePageModule)
+  },
+  {
+    path: 'image',
+    loadChildren: () => import('./image/image.module').then( m => m.ImagePageModule)
   }
 ];
 @NgModule({
